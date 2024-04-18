@@ -1086,15 +1086,14 @@ Table of Contents
    respond with Get_Identifier_Response opcode and Identifier Payload
    operand.
 
-   +============+=======+===========+============+=====================+
-   |  Operand   |  Data |   Count   |   Total    |     Description     |
-   |    name    |  type |           |    Size    |                     |
-   |            |       |           |  (Bytes)   |                     |
-   +============+=======+===========+============+=====================+
-   | Identifier | UTF-8 |  defined  |  defined   |    The encrypted    |
-   |  Payload   |       |     by    |     by     | identifier, encoded |
-   |            |       | accessory | accessory  |   as a hex string.  |
-   +------------+-------+-----------+------------+---------------------+
+    +============+=======+============+============+==================+
+    |  Operand   |  Data |   Count    | Total Size |   Description    |
+    |    name    |  type |            |  (Bytes)   |                  |
+    +============+=======+============+============+==================+
+    | Identifier | Uint8 | defined by | defined by |  The encrypted   |
+    |  Payload   |       | accessory  | accessory  | identifier as an |
+    |            |       |            |            | array of bytes.  |
+    +------------+-------+------------+------------+------------------+
 
                 Table 19: Identifier Payload Over Bluetooth
 
