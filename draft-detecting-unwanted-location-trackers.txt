@@ -5,12 +5,12 @@
 Network Working Group                                         B. Ledvina
 Internet-Draft                                                     Apple
 Intended status: Informational                               Z. Eddinger
-Expires: 22 June 2024                                             Google
+Expires: 20 October 2024                                          Google
                                                              B. Detwiler
                                                                    Apple
                                                           S. P. Polatkan
                                                                   Google
-                                                        20 December 2023
+                                                           18 April 2024
 
 
                   Detecting Unwanted Location Trackers
@@ -50,11 +50,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 June 2024.
+   This Internet-Draft will expire on 20 October 2024.
 
 Copyright Notice
 
-   Copyright (c) 2023 IETF Trust and the persons identified as the
+   Copyright (c) 2024 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -1600,8 +1600,7 @@ Table of Contents
                        |    0xFF    |   Reserved   |
                        +------------+--------------+
 
-                           Table 22: Manufacturer
-                                  Registry
+                       Table 22: Network ID Registry
 
 11.  Normative References
 
