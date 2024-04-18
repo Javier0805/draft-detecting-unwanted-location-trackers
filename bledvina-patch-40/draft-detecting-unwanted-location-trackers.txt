@@ -5,12 +5,12 @@
 Network Working Group                                         B. Ledvina
 Internet-Draft                                                     Apple
 Intended status: Informational                               Z. Eddinger
-Expires: 14 September 2024                                        Google
+Expires: 20 October 2024                                          Google
                                                              B. Detwiler
                                                                    Apple
                                                           S. P. Polatkan
                                                                   Google
-                                                           13 March 2024
+                                                           18 April 2024
 
 
                   Detecting Unwanted Location Trackers
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 14 September 2024.
+   This Internet-Draft will expire on 20 October 2024.
 
 Copyright Notice
 
@@ -1022,8 +1022,7 @@ Table of Contents
 
    The Sound_Start opcode is used to play sound on the sound maker of
    the accessory.  The sound maker MUST play sound for a minimum
-   duration of 5 seconds and a maximum duration of 30 seconds.  The
-   recommended duration is 12 seconds.
+   duration of 5 seconds.
 
    *  The accessory SHALL confirm the start of the play sound procedure
       by sending a Command_Response (Section 3.12.4.1.1) with the
@@ -1118,7 +1117,8 @@ Table of Contents
 3.12.6.  Recommended Finding Options
 
    Table 20 lists two RECOMMENDED options on the set of technology in an
-   accessory to make it findable.
+   accessory to make it findable.  Given that a sound maker is REQUIRED,
+   the accessory maker SHALL at very least implement Option A.
 
                    +=============+==========+==========+
                    |             | Option A | Option B |
