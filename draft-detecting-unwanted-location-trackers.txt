@@ -834,17 +834,19 @@ Table of Contents
    The Battery type operand describes the battery type used in the
    accessory.
 
-   +=========+=======+=======+=========+==============================+
-   | Operand |  Data | Count |  Total  |         Description          |
-   |   name  |  type |       |   Size  |                              |
-   |         |       |       | (Bytes) |                              |
-   +=========+=======+=======+=========+==============================+
-   | Battery | Uint8 |   1   |    1    |         0 = Powered          |
-   |   Type  |       |       |         | 1 = Non-rechargeable battery |
-   |         |       |       |         |   2 = Rechargeable battery   |
-   +---------+-------+-------+---------+------------------------------+
+    +=========+=======+=======+=========+=============================+
+    | Operand |  Data | Count |  Total  |         Description         |
+    |   name  |  type |       |   Size  |                             |
+    |         |       |       | (Bytes) |                             |
+    +=========+=======+=======+=========+=============================+
+    | Battery | Uint8 |   1   |    1    |        0x00 : Powered       |
+    |   Type  |       |       |         |   0x01 : Non-rechargeable   |
+    |         |       |       |         |           battery           |
+    |         |       |       |         | 0x02 : Rechargeable battery |
+    |         |       |       |         |     0x03-0xFF : Reserved    |
+    +---------+-------+-------+---------+-----------------------------+
 
-                      Table 14: Battery Type Operand
+                       Table 14: Battery Type Operand
 
 3.11.1.10.  Battery level
 
