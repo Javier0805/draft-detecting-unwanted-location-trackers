@@ -5,12 +5,12 @@
 Network Working Group                                         B. Ledvina
 Internet-Draft                                                     Apple
 Intended status: Informational                               Z. Eddinger
-Expires: 20 October 2024                                          Google
+Expires: 31 October 2024                                          Google
                                                              B. Detwiler
                                                                    Apple
                                                           S. P. Polatkan
                                                                   Google
-                                                           18 April 2024
+                                                           29 April 2024
 
 
                   Detecting Unwanted Location Trackers
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 20 October 2024.
+   This Internet-Draft will expire on 31 October 2024.
 
 Copyright Notice
 
@@ -669,6 +669,11 @@ Table of Contents
 
                     Table 7: Manufacturer Name Operand
 
+   When the Manufacturer Name is less than 64 bytes, it SHALL be
+   formatted either as: * a string value with length less than 64 bytes
+   * a string value that is both zero-terminated and zero-padded up to
+   64 bytes
+
 3.11.1.3.  Model name
 
    The Model Name operand contains the manufacturer specific model of
@@ -683,6 +688,10 @@ Table of Contents
     +--------------+-----------+-----------+------------+-------------+
 
                         Table 8: Model Name Operand
+
+   When the Model Name is less than 64 bytes, it SHALL be formatted
+   either as: * a string value with length less than 64 bytes * a string
+   value that is both zero-terminated and zero-padded up to 64 bytes
 
 3.11.1.4.  Accessory category
 
