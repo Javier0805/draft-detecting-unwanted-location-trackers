@@ -5,12 +5,12 @@
 Network Working Group                                         B. Ledvina
 Internet-Draft                                                     Apple
 Intended status: Informational                               Z. Eddinger
-Expires: 31 October 2024                                          Google
+Expires: 1 November 2024                                          Google
                                                              B. Detwiler
                                                                    Apple
                                                           S. P. Polatkan
                                                                   Google
-                                                           29 April 2024
+                                                           30 April 2024
 
 
                   Detecting Unwanted Location Trackers
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 31 October 2024.
+   This Internet-Draft will expire on 1 November 2024.
 
 Copyright Notice
 
@@ -1127,7 +1127,8 @@ Table of Contents
 3.12.6.  Recommended Finding Options
 
    Table 20 lists two RECOMMENDED options on the set of technology in an
-   accessory to make it findable.
+   accessory to make it findable.  Given that a sound maker is REQUIRED,
+   the accessory maker SHALL at very least implement Option A.
 
                    +=============+==========+==========+
                    |             | Option A | Option B |
