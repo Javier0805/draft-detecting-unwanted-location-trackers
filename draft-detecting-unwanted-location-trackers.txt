@@ -1066,24 +1066,28 @@ Table of Contents
    accessory SHALL respond to any invalid opcode with Command_Response
    and Invalid_command as the ResponseStatus.
 
-   +================+========+=====+=========+========================+
-   | Operand name   |   Data |Count|  Total  |      Description       |
-   |                |   type |     |   Size  |                        |
-   |                |        |     | (Bytes) |                        |
-   +================+========+=====+=========+========================+
-   | CommandOpCode  | Uint16 |  1  |    2    | The control procedure  |
-   |                |        |     |         | matching this response |
-   +----------------+--------+-----+---------+------------------------+
-   | ResponseStatus | Uint16 |  1  |    2    |     0x0000 Success     |
-   |                |        |     |         |  0x0001 Invalid_state  |
-   |                |        |     |         |         0x0002         |
-   |                |        |     |         | Invalid_configuration  |
-   |                |        |     |         | 0x0003 Invalid_length  |
-   |                |        |     |         |  0x0004 Invalid_param  |
-   |                |        |     |         | 0xFFFF Invalid_command |
-   +----------------+--------+-----+---------+------------------------+
+   +================+========+=====+=========+=========================+
+   | Operand name   |   Data |Count|  Total  |       Description       |
+   |                |   type |     |   Size  |                         |
+   |                |        |     | (Bytes) |                         |
+   +================+========+=====+=========+=========================+
+   | CommandOpCode  | Uint16 |  1  |    2    |  The control procedure  |
+   |                |        |     |         |  matching this response |
+   +----------------+--------+-----+---------+-------------------------+
+   | ResponseStatus | Uint16 |  1  |    2    |     0x0000 : Success    |
+   |                |        |     |         |  0x0001 : Invalid_state |
+   |                |        |     |         |         0x0002 :        |
+   |                |        |     |         |  Invalid_configuration  |
+   |                |        |     |         |         0x0003 :        |
+   |                |        |     |         |      Invalid_length     |
+   |                |        |     |         |  0x0004 : Invalid_param |
+   |                |        |     |         |     0x0005-0xFFFE :     |
+   |                |        |     |         |         Reserved        |
+   |                |        |     |         |         0xFFFF :        |
+   |                |        |     |         |     Invalid_command     |
+   +----------------+--------+-----+---------+-------------------------+
 
-                   Table 18: Command Response Operands
+                    Table 18: Command Response Operands
 
 3.12.4.2.  Identifier Payload
 
