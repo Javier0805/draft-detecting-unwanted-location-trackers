@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-04-30T00:38:09.314779+00:00",
+  "timestamp": "2024-05-02T00:38:38.560800+00:00",
   "repo": "bdetwiler/draft-detecting-unwanted-location-trackers",
   "labels": [
     {
@@ -8682,7 +8682,7 @@
       "id": "PR_kwDOJdqgvc5peKsC",
       "title": "Update ringing duration definition",
       "url": "https://github.com/bdetwiler/draft-detecting-unwanted-location-trackers/pull/175",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "davidlazarov",
       "authorAssociation": "COLLABORATOR",
       "assignees": [
@@ -8691,26 +8691,114 @@
       "labels": [],
       "body": "set a maximum duration and the recommended duration",
       "createdAt": "2024-03-13T08:09:10Z",
-      "updatedAt": "2024-04-18T18:39:40Z",
+      "updatedAt": "2024-05-01T01:23:06Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
       "baseRefOid": "439a1abc65ee8d4c96013cd7078365bbe40c4330",
       "headRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "headRefName": "davidlazarov-patch-6",
-      "headRefOid": "d80da9d8ae3d98fbef4fefbe764557210aaafbd4",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "96c95a6480adad4fed89f68c07f808929368bb3f",
+      "closedAt": "2024-05-01T01:23:06Z",
+      "mergedAt": "2024-05-01T01:23:06Z",
+      "mergedBy": "bledvina",
+      "mergeCommit": {
+        "oid": "bb78ff96604c3e711ad8bd652678a4301688d561"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOJdqgvc52lzpH",
+          "commit": {
+            "abbreviatedOid": "d80da9d"
+          },
+          "author": "bledvina",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-04-09T16:57:20Z",
+          "updatedAt": "2024-04-30T15:33:36Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "@davidlazarov should \"recommended\" be capitalized to conform to IETF requirement guidelines?",
+              "createdAt": "2024-04-09T16:57:20Z",
+              "updatedAt": "2024-04-30T15:33:36Z"
+            },
+            {
+              "originalPosition": 6,
+              "body": "@davidlazarov sorry, not capitalized, but all caps, i.e. \"RECOMMENDED\"",
+              "createdAt": "2024-04-18T21:12:54Z",
+              "updatedAt": "2024-04-30T15:33:36Z"
+            },
+            {
+              "originalPosition": 5,
+              "body": "@davidlazarov should \"recommended\" be capitalized, i.e. \"RECOMMENDED\"",
+              "createdAt": "2024-04-30T15:33:32Z",
+              "updatedAt": "2024-04-30T15:33:36Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOJdqgvc55INOV",
+          "commit": {
+            "abbreviatedOid": "d80da9d"
+          },
+          "author": "davidlazarov",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-04-30T18:29:55Z",
+          "updatedAt": "2024-04-30T18:29:55Z",
+          "comments": [
+            {
+              "originalPosition": 6,
+              "body": "Done",
+              "createdAt": "2024-04-30T18:29:55Z",
+              "updatedAt": "2024-04-30T18:29:55Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOJdqgvc55INRR",
+          "commit": {
+            "abbreviatedOid": "d80da9d"
+          },
+          "author": "davidlazarov",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-04-30T18:30:02Z",
+          "updatedAt": "2024-04-30T18:30:02Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "Done",
+              "createdAt": "2024-04-30T18:30:02Z",
+              "updatedAt": "2024-04-30T18:30:02Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOJdqgvc55K2mk",
+          "commit": {
+            "abbreviatedOid": "96c95a6"
+          },
+          "author": "bledvina",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-05-01T01:23:01Z",
+          "updatedAt": "2024-05-01T01:23:01Z",
+          "comments": []
+        }
+      ]
     },
     {
       "number": 176,
       "id": "PR_kwDOJdqgvc5tEUIp",
       "title": "Recommend finding options minor update",
       "url": "https://github.com/bdetwiler/draft-detecting-unwanted-location-trackers/pull/176",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "bledvina",
       "authorAssociation": "COLLABORATOR",
       "assignees": [
@@ -8719,19 +8807,35 @@
       "labels": [],
       "body": "Clarified recommended finding options section",
       "createdAt": "2024-04-18T15:40:38Z",
-      "updatedAt": "2024-04-18T21:14:04Z",
+      "updatedAt": "2024-04-30T04:06:31Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
       "baseRefOid": "439a1abc65ee8d4c96013cd7078365bbe40c4330",
       "headRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "headRefName": "bledvina-patch-40",
       "headRefOid": "6e2b95db39e021b744ffbe77573a2f8fd5cfa3b1",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-04-30T04:06:31Z",
+      "mergedAt": "2024-04-30T04:06:31Z",
+      "mergedBy": "bledvina",
+      "mergeCommit": {
+        "oid": "35a0c73bdeea187767c1502198eb97dded1a9bc0"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOJdqgvc55AXQL",
+          "commit": {
+            "abbreviatedOid": "6e2b95d"
+          },
+          "author": "siddikaparlak",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-04-30T03:30:22Z",
+          "updatedAt": "2024-04-30T03:30:22Z",
+          "comments": []
+        }
+      ]
     },
     {
       "number": 177,
@@ -8844,7 +8948,7 @@
       "labels": [],
       "body": "The condition where support is not required is when an accessory supports identifier lookup over NFC.",
       "createdAt": "2024-04-19T17:23:20Z",
-      "updatedAt": "2024-04-21T08:33:08Z",
+      "updatedAt": "2024-05-01T17:44:30Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
       "baseRefOid": "79563c3fe26fbaecef0173d9bf799be06ef1461a",
@@ -8855,7 +8959,15 @@
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "davidlazarov",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Discussed over the meeting - thanks for clarifying.",
+          "createdAt": "2024-05-01T17:44:21Z",
+          "updatedAt": "2024-05-01T17:44:21Z"
+        }
+      ],
       "reviews": [
         {
           "id": "PRR_kwDOJdqgvc54AVWp",
@@ -8868,6 +8980,19 @@
           "body": "That looks problematic to me, why is it optional?\r\nMaybe it's optional if already available through NFC? (but even then, we need to make sure that the client side implementation supports that..)",
           "createdAt": "2024-04-21T08:33:08Z",
           "updatedAt": "2024-04-21T08:33:08Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOJdqgvc55Pazc",
+          "commit": {
+            "abbreviatedOid": "bf36aa0"
+          },
+          "author": "davidlazarov",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-05-01T17:44:30Z",
+          "updatedAt": "2024-05-01T17:44:30Z",
           "comments": []
         }
       ]
@@ -8884,18 +9009,26 @@
       "labels": [],
       "body": "'Manufacturer' is the wrong language to use. Instead, it shall use 'Finding Network'.",
       "createdAt": "2024-04-19T17:44:20Z",
-      "updatedAt": "2024-04-21T08:31:06Z",
+      "updatedAt": "2024-05-01T17:43:11Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
-      "baseRefOid": "79563c3fe26fbaecef0173d9bf799be06ef1461a",
+      "baseRefOid": "bb78ff96604c3e711ad8bd652678a4301688d561",
       "headRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "headRefName": "bdetwiler/finding-network-registry",
-      "headRefOid": "0f133c89fbcdf528642af79e8c3275ec44ab3f02",
+      "headRefOid": "d7f0f8bc9c68f821d6750ee1018b553c8a0358c0",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "bdetwiler",
+          "authorAssociation": "OWNER",
+          "body": "Changes now rebased and ready for review\r\n",
+          "createdAt": "2024-05-01T17:42:58Z",
+          "updatedAt": "2024-05-01T17:42:58Z"
+        }
+      ],
       "reviews": [
         {
           "id": "PRR_kwDOJdqgvc537TOt",
@@ -8992,13 +9125,13 @@
       "labels": [],
       "body": "",
       "createdAt": "2024-04-19T17:55:49Z",
-      "updatedAt": "2024-04-19T17:59:25Z",
+      "updatedAt": "2024-05-01T17:29:37Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
-      "baseRefOid": "79563c3fe26fbaecef0173d9bf799be06ef1461a",
+      "baseRefOid": "bb78ff96604c3e711ad8bd652678a4301688d561",
       "headRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "headRefName": "bdetwiler/update-battery-level-values",
-      "headRefOid": "7b1c5a5cf1103aa83e0a5b523745f6219c278cc8",
+      "headRefOid": "f1496a6e2c528c8acd66b557f9c3eebe3e2ac016",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -9024,6 +9157,39 @@
               "updatedAt": "2024-04-19T17:59:25Z"
             }
           ]
+        },
+        {
+          "id": "PRR_kwDOJdqgvc55PCXb",
+          "commit": {
+            "abbreviatedOid": "7b1c5a5"
+          },
+          "author": "bdetwiler",
+          "authorAssociation": "OWNER",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-05-01T17:05:27Z",
+          "updatedAt": "2024-05-01T17:05:27Z",
+          "comments": [
+            {
+              "originalPosition": 5,
+              "body": "@bledvina pushed fix\r\n",
+              "createdAt": "2024-05-01T17:05:27Z",
+              "updatedAt": "2024-05-01T17:05:27Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOJdqgvc55POOI",
+          "commit": {
+            "abbreviatedOid": "f1496a6"
+          },
+          "author": "davidlazarov",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-05-01T17:29:37Z",
+          "updatedAt": "2024-05-01T17:29:37Z",
+          "comments": []
         }
       ]
     },
@@ -9032,24 +9198,26 @@
       "id": "PR_kwDOJdqgvc5tNCzb",
       "title": "Update Command Response values to include reserved values",
       "url": "https://github.com/bdetwiler/draft-detecting-unwanted-location-trackers/pull/183",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "bdetwiler",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-04-19T18:06:05Z",
-      "updatedAt": "2024-04-22T16:29:47Z",
+      "updatedAt": "2024-04-30T16:04:02Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
       "baseRefOid": "79563c3fe26fbaecef0173d9bf799be06ef1461a",
       "headRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "headRefName": "bdetwiler/update-command-response-values",
       "headRefOid": "a9c9ed276435997256031c5c2c66ded736b6ac4e",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-04-30T16:04:02Z",
+      "mergedAt": "2024-04-30T16:04:02Z",
+      "mergedBy": "bledvina",
+      "mergeCommit": {
+        "oid": "88984c656a1c703e458600a5174261b38686c399"
+      },
       "comments": [],
       "reviews": [
         {
@@ -9186,7 +9354,7 @@
       "labels": [],
       "body": "",
       "createdAt": "2024-04-26T23:35:13Z",
-      "updatedAt": "2024-04-26T23:35:14Z",
+      "updatedAt": "2024-05-01T21:00:30Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
       "baseRefOid": "79563c3fe26fbaecef0173d9bf799be06ef1461a",
@@ -9198,33 +9366,90 @@
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOJdqgvc55K2WX",
+          "commit": {
+            "abbreviatedOid": "acd96bf"
+          },
+          "author": "bledvina",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-05-01T01:21:03Z",
+          "updatedAt": "2024-05-01T01:21:08Z",
+          "comments": [
+            {
+              "originalPosition": 25,
+              "body": "@tertan26 no Apple-Google reserved responses needed?",
+              "createdAt": "2024-05-01T01:21:03Z",
+              "updatedAt": "2024-05-01T01:21:08Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOJdqgvc55Q08S",
+          "commit": {
+            "abbreviatedOid": "acd96bf"
+          },
+          "author": "tertan26",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-05-01T21:00:30Z",
+          "updatedAt": "2024-05-01T21:00:30Z",
+          "comments": [
+            {
+              "originalPosition": 25,
+              "body": "No, the added Apple-Google reserved opcodes use existing command responses.",
+              "createdAt": "2024-05-01T21:00:30Z",
+              "updatedAt": "2024-05-01T21:00:40Z"
+            }
+          ]
+        }
+      ]
     },
     {
       "number": 188,
       "id": "PR_kwDOJdqgvc5uESUb",
       "title": "Clarify that opcodes are all 2 bytes in length",
       "url": "https://github.com/bdetwiler/draft-detecting-unwanted-location-trackers/pull/188",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "bdetwiler",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-04-29T21:34:05Z",
-      "updatedAt": "2024-04-29T21:34:13Z",
+      "updatedAt": "2024-04-30T16:03:38Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
       "baseRefOid": "f2a975edb21bd347e29a67cd3c42073f799ff7d7",
       "headRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "headRefName": "bdetwiler/clarify-opcode-value-lengths",
       "headRefOid": "f46a5fb788b7ca3dfc08f6cfca9840193ced6117",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-04-30T16:03:38Z",
+      "mergedAt": "2024-04-30T16:03:38Z",
+      "mergedBy": "bledvina",
+      "mergeCommit": {
+        "oid": "ea05aa0d9dc4995b5daa7f6af699ff727b95cfb9"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOJdqgvc55BkJv",
+          "commit": {
+            "abbreviatedOid": "f46a5fb"
+          },
+          "author": "davidlazarov",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-04-30T07:40:36Z",
+          "updatedAt": "2024-04-30T07:40:36Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
