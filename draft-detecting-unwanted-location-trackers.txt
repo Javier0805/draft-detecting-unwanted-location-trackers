@@ -5,12 +5,12 @@
 Network Working Group                                         B. Ledvina
 Internet-Draft                                                     Apple
 Intended status: Informational                               Z. Eddinger
-Expires: 2 November 2024                                          Google
+Expires: 3 November 2024                                          Google
                                                              B. Detwiler
                                                                    Apple
                                                           S. P. Polatkan
                                                                   Google
-                                                              1 May 2024
+                                                              2 May 2024
 
 
                   Detecting Unwanted Location Trackers
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 2 November 2024.
+   This Internet-Draft will expire on 3 November 2024.
 
 Copyright Notice
 
@@ -852,18 +852,19 @@ Table of Contents
 
    The Battery level operand indicates the current battery level.
 
-        +=========+=======+=======+=========+====================+
-        | Operand |  Data | Count |  Total  |    Description     |
-        |   name  |  type |       |   Size  |                    |
-        |         |       |       | (Bytes) |                    |
-        +=========+=======+=======+=========+====================+
-        | Battery | Uint8 |   1   |    1    |      0 = Full      |
-        |  Level  |       |       |         |     1 = Medium     |
-        |         |       |       |         |      2 = Low       |
-        |         |       |       |         | 3 = Critically low |
-        +---------+-------+-------+---------+--------------------+
+       +=========+=======+=======+=========+=======================+
+       | Operand |  Data | Count |  Total  |      Description      |
+       |   name  |  type |       |   Size  |                       |
+       |         |       |       | (Bytes) |                       |
+       +=========+=======+=======+=========+=======================+
+       | Battery | Uint8 |   1   |    1    |      0x00 : Full      |
+       |  Level  |       |       |         |     0x01 : Medium     |
+       |         |       |       |         |       0x02 : Low      |
+       |         |       |       |         | 0x03 : Critically low |
+       |         |       |       |         |  0x04-0xFF : Reserved |
+       +---------+-------+-------+---------+-----------------------+
 
-                     Table 15: Battery Level Operand
+                      Table 15: Battery Level Operand
 
 3.12.  Non-Owner Finding
 
