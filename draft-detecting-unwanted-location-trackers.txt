@@ -5,12 +5,12 @@
 Network Working Group                                         B. Ledvina
 Internet-Draft                                                     Apple
 Intended status: Informational                               Z. Eddinger
-Expires: 3 November 2024                                          Google
+Expires: 4 November 2024                                          Google
                                                              B. Detwiler
                                                                    Apple
                                                           S. P. Polatkan
                                                                   Google
-                                                              2 May 2024
+                                                              3 May 2024
 
 
                   Detecting Unwanted Location Trackers
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 3 November 2024.
+   This Internet-Draft will expire on 4 November 2024.
 
 Copyright Notice
 
@@ -1452,8 +1452,11 @@ Table of Contents
    Network ID value to the Manufacturer network ID Registry
    (Section 10.1).
 
-   During onboarding, a product data registry will be created that
-   includes information such as:
+   During onboarding, a product data registry SHALL be created and
+   maintained by the network provider for all accessory manufacturers
+   participating in their network.  Accessory manufacturers will work
+   with the network providers they participate in, to provide
+   information such as:
 
    *  Product Data: an 8-byte string representing a unique identifier
       for a product.  See Product Data (Section 3.11.1.1).
