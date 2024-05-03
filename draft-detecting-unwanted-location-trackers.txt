@@ -979,41 +979,41 @@ Table of Contents
 
    These 2-byte opcodes are defined in Table 17.
 
-     +=========================+========+=============+==============+
-     |          Opcode         | Opcode |   Operands  |     GATT     |
-     |                         | value  |             | subprocedure |
-     +=========================+========+=============+==============+
-     |       Sound_Start       | 0x0300 |     None    |  Write; To   |
-     |                         |        |             |  accessory   |
-     +-------------------------+--------+-------------+--------------+
-     |        Sound_Stop       | 0x0301 |     None    |  Write; To   |
-     |                         |        |             |  accessory   |
-     +-------------------------+--------+-------------+--------------+
-     |     Command_Response    | 0x0302 |   Command   | Indications; |
-     |                         |        |   Response  |     From     |
-     |                         |        |   (Section  |  accessory   |
-     |                         |        | 3.12.4.1.1) |              |
-     +-------------------------+--------+-------------+--------------+
-     |     Sound_Completed     | 0x0303 |     None    | Indications; |
-     |                         |        |             |     From     |
-     |                         |        |             |  accessory   |
-     +-------------------------+--------+-------------+--------------+
-     |      Get_Identifier     | 0x0404 |     None    |  Write; To   |
-     |                         |        |             |  accessory   |
-     +-------------------------+--------+-------------+--------------+
-     | Get_Identifier_Response | 0x0405 |  Identifier | Indications; |
-     |                         |        |   Payload   |     From     |
-     |                         |        |   (Section  |  accessory   |
-     |                         |        |  3.12.4.2)  |              |
-     +-------------------------+--------+-------------+--------------+
-     |         RESERVED        | 0x0304 |             |              |
-     |                         |   -    |             |              |
-     |                         | 0x035F |             |              |
-     +-------------------------+--------+-------------+--------------+
-     |   RESERVED (Response)   | 0x0405 |             |              |
-     |                         |   -    |             |              |
-     |                         | 0x045F |             |              |
-     +-------------------------+--------+-------------+--------------+
+   +=======================+======+===========+============+===========+
+   |         Opcode        |Opcode|  Operands |    GATT    |Requirement|
+   |                       |value |           |subprocedure|           |
+   +=======================+======+===========+============+===========+
+   |      Sound_Start      |0x0300|    None   | Write; To  |  REQUIRED |
+   |                       |      |           | accessory  |           |
+   +-----------------------+------+-----------+------------+-----------+
+   |       Sound_Stop      |0x0301|    None   | Write; To  |  REQUIRED |
+   |                       |      |           | accessory  |           |
+   +-----------------------+------+-----------+------------+-----------+
+   |    Command_Response   |0x0302|  Command  |Indications;|  REQUIRED |
+   |                       |      |  Response |    From    |           |
+   |                       |      |  (Section | accessory  |           |
+   |                       |      |3.12.4.1.1)|            |           |
+   +-----------------------+------+-----------+------------+-----------+
+   |    Sound_Completed    |0x0303|    None   |Indications;|  REQUIRED |
+   |                       |      |           |    From    |           |
+   |                       |      |           | accessory  |           |
+   +-----------------------+------+-----------+------------+-----------+
+   |     Get_Identifier    |0x0404|    None   | Write; To  |  OPTIONAL |
+   |                       |      |           | accessory  |           |
+   +-----------------------+------+-----------+------------+-----------+
+   |Get_Identifier_Response|0x0405| Identifier|Indications;|  OPTIONAL |
+   |                       |      |  Payload  |    From    |           |
+   |                       |      |  (Section | accessory  |           |
+   |                       |      | 3.12.4.2) |            |           |
+   +-----------------------+------+-----------+------------+-----------+
+   |        RESERVED       |0x0304|           |            |           |
+   |                       |  -   |           |            |           |
+   |                       |0x035F|           |            |           |
+   +-----------------------+------+-----------+------------+-----------+
+   |  RESERVED (Response)  |0x0405|           |            |           |
+   |                       |  -   |           |            |           |
+   |                       |0x045F|           |            |           |
+   +-----------------------+------+-----------+------------+-----------+
 
                     Table 17: Non-Owner Controls Opcodes
 
@@ -1023,9 +1023,10 @@ Table of Contents
    In all other states, the accessory SHALL return the Invalid_command
    error as the ResponseStatus in Command_Response.
 
-   Get_Identifier SHALL only be available when in identifier read state;
-   otherwise, it MUST send Command_Response (Section 3.12.4.1.1) with
-   the Invalid_command as the ResponseStatus.
+   If Identifer Retrieval over Bluetooth LE (Section 3.14.3) is
+   supported, Get_Identifier SHALL only be available when in identifier
+   read state; otherwise, it MUST send Command_Response
+   (Section 3.12.4.1.1) with the Invalid_command as the ResponseStatus.
 
    The identifier read state is discussed further in Identifier Payload
    (Section 3.12.4.2).

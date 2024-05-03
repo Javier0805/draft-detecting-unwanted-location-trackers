@@ -2574,6 +2574,7 @@ The sound maker <span class="bcp14">MUST</span> emit a sound with minimum 60 Pho
                 <th class="text-center" rowspan="1" colspan="1">Opcode  value</th>
                 <th class="text-center" rowspan="1" colspan="1">Operands</th>
                 <th class="text-center" rowspan="1" colspan="1">GATT subprocedure</th>
+                <th class="text-center" rowspan="1" colspan="1">Requirement</th>
               </tr>
             </thead>
             <tbody>
@@ -2582,12 +2583,18 @@ The sound maker <span class="bcp14">MUST</span> emit a sound with minimum 60 Pho
                 <td class="text-center" rowspan="1" colspan="1">0x0300</td>
                 <td class="text-center" rowspan="1" colspan="1">None</td>
                 <td class="text-center" rowspan="1" colspan="1">Write; To accessory</td>
+                <td class="text-center" rowspan="1" colspan="1">
+                  <span class="bcp14">REQUIRED</span>
+</td>
               </tr>
               <tr>
                 <td class="text-center" rowspan="1" colspan="1">Sound_Stop</td>
                 <td class="text-center" rowspan="1" colspan="1">0x0301</td>
                 <td class="text-center" rowspan="1" colspan="1">None</td>
                 <td class="text-center" rowspan="1" colspan="1">Write; To accessory</td>
+                <td class="text-center" rowspan="1" colspan="1">
+                  <span class="bcp14">REQUIRED</span>
+</td>
               </tr>
               <tr>
                 <td class="text-center" rowspan="1" colspan="1">Command_Response</td>
@@ -2596,18 +2603,27 @@ The sound maker <span class="bcp14">MUST</span> emit a sound with minimum 60 Pho
                   <span><a href="#command-response" class="internal xref">Command Response</a> (<a href="#command-response" class="auto internal xref">Section 3.12.4.1.1</a>)</span>
 </td>
                 <td class="text-center" rowspan="1" colspan="1">Indications; From accessory</td>
+                <td class="text-center" rowspan="1" colspan="1">
+                  <span class="bcp14">REQUIRED</span>
+</td>
               </tr>
               <tr>
                 <td class="text-center" rowspan="1" colspan="1">Sound_Completed</td>
                 <td class="text-center" rowspan="1" colspan="1">0x0303</td>
                 <td class="text-center" rowspan="1" colspan="1">None</td>
                 <td class="text-center" rowspan="1" colspan="1">Indications; From accessory</td>
+                <td class="text-center" rowspan="1" colspan="1">
+                  <span class="bcp14">REQUIRED</span>
+</td>
               </tr>
               <tr>
                 <td class="text-center" rowspan="1" colspan="1">Get_Identifier</td>
                 <td class="text-center" rowspan="1" colspan="1">0x0404</td>
                 <td class="text-center" rowspan="1" colspan="1">None</td>
                 <td class="text-center" rowspan="1" colspan="1">Write; To accessory</td>
+                <td class="text-center" rowspan="1" colspan="1">
+                  <span class="bcp14">OPTIONAL</span>
+</td>
               </tr>
               <tr>
                 <td class="text-center" rowspan="1" colspan="1">Get_Identifier_Response</td>
@@ -2616,10 +2632,14 @@ The sound maker <span class="bcp14">MUST</span> emit a sound with minimum 60 Pho
                   <span><a href="#identifier-payload" class="internal xref">Identifier Payload</a> (<a href="#identifier-payload" class="auto internal xref">Section 3.12.4.2</a>)</span>
 </td>
                 <td class="text-center" rowspan="1" colspan="1">Indications; From accessory</td>
+                <td class="text-center" rowspan="1" colspan="1">
+                  <span class="bcp14">OPTIONAL</span>
+</td>
               </tr>
               <tr>
                 <td class="text-center" rowspan="1" colspan="1">RESERVED</td>
                 <td class="text-center" rowspan="1" colspan="1">0x0304 - 0x035F</td>
+                <td class="text-center" rowspan="1" colspan="1"> </td>
                 <td class="text-center" rowspan="1" colspan="1"> </td>
                 <td class="text-center" rowspan="1" colspan="1"> </td>
               </tr>
@@ -2628,13 +2648,14 @@ The sound maker <span class="bcp14">MUST</span> emit a sound with minimum 60 Pho
                 <td class="text-center" rowspan="1" colspan="1">0x0405 - 0x045F</td>
                 <td class="text-center" rowspan="1" colspan="1"> </td>
                 <td class="text-center" rowspan="1" colspan="1"> </td>
+                <td class="text-center" rowspan="1" colspan="1"> </td>
               </tr>
             </tbody>
           </table>
 </div>
 <p id="section-3.12.4-5">Sound_Start and Sound_Stop <span class="bcp14">SHALL</span> only be available to the platform when the accessory is in the separated state.<a href="#section-3.12.4-5" class="pilcrow">¶</a></p>
 <p id="section-3.12.4-6">In all other states, the accessory <span class="bcp14">SHALL</span> return the Invalid_command error as the ResponseStatus in Command_Response.<a href="#section-3.12.4-6" class="pilcrow">¶</a></p>
-<p id="section-3.12.4-7">Get_Identifier <span class="bcp14">SHALL</span> only be available when in identifier read state; otherwise, it <span class="bcp14">MUST</span> send <span><a href="#command-response" class="internal xref">Command_Response</a> (<a href="#command-response" class="auto internal xref">Section 3.12.4.1.1</a>)</span> with the Invalid_command as the ResponseStatus.<a href="#section-3.12.4-7" class="pilcrow">¶</a></p>
+<p id="section-3.12.4-7">If <span><a href="#identifier-retrieval-over-bluetooth-le" class="internal xref">Identifer Retrieval over Bluetooth LE</a> (<a href="#identifier-retrieval-over-bluetooth-le" class="auto internal xref">Section 3.14.3</a>)</span> is supported, Get_Identifier <span class="bcp14">SHALL</span> only be available when in identifier read state; otherwise, it <span class="bcp14">MUST</span> send <span><a href="#command-response" class="internal xref">Command_Response</a> (<a href="#command-response" class="auto internal xref">Section 3.12.4.1.1</a>)</span> with the Invalid_command as the ResponseStatus.<a href="#section-3.12.4-7" class="pilcrow">¶</a></p>
 <p id="section-3.12.4-8">The identifier read state is discussed further in <span><a href="#identifier-payload" class="internal xref">Identifier Payload</a> (<a href="#identifier-payload" class="auto internal xref">Section 3.12.4.2</a>)</span>.<a href="#section-3.12.4-8" class="pilcrow">¶</a></p>
 <div id="play-sound">
 <section id="section-3.12.4.1">
