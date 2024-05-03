@@ -139,7 +139,7 @@ Table of Contents
        9.3.1.  Stable identifiers
        9.3.2.  Proprietary company payload data
    10. IANA Considerations
-     10.1.  Manufacturer Network ID Registry
+     10.1.  Finding Network Registry
        10.1.1.  Temporary Registry
    11. Normative References
    Authors' Addresses
@@ -455,7 +455,7 @@ Table of Contents
 3.7.  Network ID
 
    The 1-byte Network ID SHALL be set based on a registered value for
-   the manufacturer, as defined in Manufacturer Network ID Registry
+   the manufacturer, as defined in Finding Network Registry
    (Section 10.1).
 
 3.8.  Near-owner bit
@@ -1449,8 +1449,7 @@ Table of Contents
 
    Accessory manufacturers MUST follow a minimum set of steps for their
    accessories to be detectable by platforms such as adding their
-   Network ID value to the Manufacturer network ID Registry
-   (Section 10.1).
+   Network ID value to the Finding Network Registry (Section 10.1).
 
    During onboarding, a product data registry SHALL be created and
    maintained by the network provider for all accessory manufacturers
@@ -1587,40 +1586,41 @@ Table of Contents
 10.  IANA Considerations
 
    Eventually an IANA will create a new registry group called "Unwanted
-   Tracking Protocols (UTP)".  This group includes the "Manufacturer
-   Network ID" registry.
+   Tracking Protocols (UTP)".  This group includes the "Finding Network
+   ID" registry.
 
-10.1.  Manufacturer Network ID Registry
+10.1.  Finding Network Registry
 
    New entries are assigned only for values that have received Expert
    Review, per Section 4.5 of [RFC8126].
 
    An entry in this registry contains the following fields:
 
-   *  Manufacturer Name: the name of an organization that is producing a
-      location-tracker accessory
-
    *  Network ID: a 1-byte value specifying the Network ID associated
-      with the Manufacturer Name
+      with the Network Provider
+
+   *  Network Provider: the name of the organization that is
+      facilitating the locations for location-tracker accessories
 
 10.1.1.  Temporary Registry
 
    Until this an IANA registry is available, the values in this registry
    are listed in Table 22.
 
-                       +============+==============+
-                       | Network ID | Manufacturer |
-                       +============+==============+
-                       |    0x00    |   Reserved   |
-                       +------------+--------------+
-                       |    0x01    |  Apple Inc.  |
-                       +------------+--------------+
-                       |    0x02    |  Google LLC  |
-                       +------------+--------------+
-                       |    0xFF    |   Reserved   |
-                       +------------+--------------+
+                     +============+==================+
+                     | Network ID | Network Provider |
+                     +============+==================+
+                     |    0x00    |     Reserved     |
+                     +------------+------------------+
+                     |    0x01    |    Apple Inc.    |
+                     +------------+------------------+
+                     |    0x02    |    Google LLC    |
+                     +------------+------------------+
+                     |    0xFF    |     Reserved     |
+                     +------------+------------------+
 
-                       Table 22: Network ID Registry
+                         Table 22: Finding Network
+                                  Registry
 
 11.  Normative References
 

@@ -1387,7 +1387,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
             <p id="section-toc.1-1.10.1"><a href="#section-10" class="auto internal xref">10</a>. <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10.2.1">
-                <p id="section-toc.1-1.10.2.1.1"><a href="#section-10.1" class="auto internal xref">10.1</a>.  <a href="#name-manufacturer-network-id-reg" class="internal xref">Manufacturer Network ID Registry</a></p>
+                <p id="section-toc.1-1.10.2.1.1"><a href="#section-10.1" class="auto internal xref">10.1</a>.  <a href="#name-finding-network-registry" class="internal xref">Finding Network Registry</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10.2.1.2.1">
                     <p id="section-toc.1-1.10.2.1.2.1.1"><a href="#section-10.1.1" class="auto internal xref">10.1.1</a>.  <a href="#name-temporary-registry" class="internal xref">Temporary Registry</a></p>
@@ -1740,7 +1740,7 @@ This duration allows a platform's unwanted tracking algorithms to detect that th
         <h3 id="name-network-id">
 <a href="#section-3.7" class="section-number selfRef">3.7. </a><a href="#name-network-id" class="section-name selfRef">Network ID</a>
         </h3>
-<p id="section-3.7-1">The 1-byte Network ID <span class="bcp14">SHALL</span> be set based on a registered value for the manufacturer, as defined in <span><a href="#manufacturer-protocol-registry" class="internal xref">Manufacturer Network ID Registry</a> (<a href="#manufacturer-protocol-registry" class="auto internal xref">Section 10.1</a>)</span>.<a href="#section-3.7-1" class="pilcrow">¶</a></p>
+<p id="section-3.7-1">The 1-byte Network ID <span class="bcp14">SHALL</span> be set based on a registered value for the manufacturer, as defined in <span><a href="#finding-network-registry" class="internal xref">Finding Network Registry</a> (<a href="#finding-network-registry" class="auto internal xref">Section 10.1</a>)</span>.<a href="#section-3.7-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="near-owner-bit">
@@ -3205,7 +3205,7 @@ If none of the accessory categories provided in <a href="#_table-accessory-categ
       <h2 id="name-onboarding">
 <a href="#section-7" class="section-number selfRef">7. </a><a href="#name-onboarding" class="section-name selfRef">Onboarding</a>
       </h2>
-<p id="section-7-1">Accessory manufacturers <span class="bcp14">MUST</span> follow a minimum set of steps for their accessories to be detectable by platforms such as adding their Network ID value to the <span><a href="#manufacturer-protocol-registry" class="internal xref">Manufacturer network ID Registry</a> (<a href="#manufacturer-protocol-registry" class="auto internal xref">Section 10.1</a>)</span>.<a href="#section-7-1" class="pilcrow">¶</a></p>
+<p id="section-7-1">Accessory manufacturers <span class="bcp14">MUST</span> follow a minimum set of steps for their accessories to be detectable by platforms such as adding their Network ID value to the <span><a href="#finding-network-registry" class="internal xref">Finding Network Registry</a> (<a href="#finding-network-registry" class="auto internal xref">Section 10.1</a>)</span>.<a href="#section-7-1" class="pilcrow">¶</a></p>
 <p id="section-7-2">During onboarding, a product data registry <span class="bcp14">SHALL</span> be created and maintained by the network provider for all accessory manufacturers participating in their network. Accessory manufacturers will work with the network providers they participate in, to provide information such as:<a href="#section-7-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-7-3.1">
@@ -3323,20 +3323,20 @@ on the whereabouts of an accessory.<a href="#section-9.3.1-1" class="pilcrow">¶
 <a href="#section-10" class="section-number selfRef">10. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
 <p id="section-10-1">Eventually an IANA will create a new registry group called "Unwanted Tracking Protocols (UTP)".
-This group includes the "Manufacturer Network ID" registry.<a href="#section-10-1" class="pilcrow">¶</a></p>
-<div id="manufacturer-protocol-registry">
+This group includes the "Finding Network ID" registry.<a href="#section-10-1" class="pilcrow">¶</a></p>
+<div id="finding-network-registry">
 <section id="section-10.1">
-        <h3 id="name-manufacturer-network-id-reg">
-<a href="#section-10.1" class="section-number selfRef">10.1. </a><a href="#name-manufacturer-network-id-reg" class="section-name selfRef">Manufacturer Network ID Registry</a>
+        <h3 id="name-finding-network-registry">
+<a href="#section-10.1" class="section-number selfRef">10.1. </a><a href="#name-finding-network-registry" class="section-name selfRef">Finding Network Registry</a>
         </h3>
 <p id="section-10.1-1">New entries are assigned only for values that have received Expert Review, per <span><a href="https://rfc-editor.org/rfc/rfc8126#section-4.5" class="relref">Section 4.5</a> of [<a href="#RFC8126" class="cite xref">RFC8126</a>]</span>.<a href="#section-10.1-1" class="pilcrow">¶</a></p>
 <p id="section-10.1-2">An entry in this registry contains the following fields:<a href="#section-10.1-2" class="pilcrow">¶</a></p>
 <ul class="normal">
 <li class="normal" id="section-10.1-3.1">
-            <p id="section-10.1-3.1.1">Manufacturer Name: the name of an organization that is producing a location-tracker accessory<a href="#section-10.1-3.1.1" class="pilcrow">¶</a></p>
+            <p id="section-10.1-3.1.1">Network ID: a 1-byte value specifying the Network ID associated with the Network Provider<a href="#section-10.1-3.1.1" class="pilcrow">¶</a></p>
 </li>
           <li class="normal" id="section-10.1-3.2">
-            <p id="section-10.1-3.2.1">Network ID: a 1-byte value specifying the Network ID associated with the Manufacturer Name<a href="#section-10.1-3.2.1" class="pilcrow">¶</a></p>
+            <p id="section-10.1-3.2.1">Network Provider: the name of the organization that is facilitating the locations for location-tracker accessories<a href="#section-10.1-3.2.1" class="pilcrow">¶</a></p>
 </li>
         </ul>
 <div id="temporary-registry">
@@ -3344,17 +3344,17 @@ This group includes the "Manufacturer Network ID" registry.<a href="#section-10-
           <h4 id="name-temporary-registry">
 <a href="#section-10.1.1" class="section-number selfRef">10.1.1. </a><a href="#name-temporary-registry" class="section-name selfRef">Temporary Registry</a>
           </h4>
-<p id="section-10.1.1-1">Until this an IANA registry is available, the values in this registry are listed in <a href="#_table-temp-network-id-registry" class="auto internal xref">Table 22</a>.<a href="#section-10.1.1-1" class="pilcrow">¶</a></p>
-<span id="name-network-id-registry"></span><div id="_table-temp-network-id-registry">
+<p id="section-10.1.1-1">Until this an IANA registry is available, the values in this registry are listed in <a href="#_table-temp-network-registry" class="auto internal xref">Table 22</a>.<a href="#section-10.1.1-1" class="pilcrow">¶</a></p>
+<span id="name-finding-network-registry-2"></span><div id="_table-temp-network-registry">
 <table class="center" id="table-22">
             <caption>
 <a href="#table-22" class="selfRef">Table 22</a>:
-<a href="#name-network-id-registry" class="selfRef">Network ID Registry</a>
+<a href="#name-finding-network-registry-2" class="selfRef">Finding Network Registry</a>
             </caption>
 <thead>
               <tr>
                 <th class="text-center" rowspan="1" colspan="1">Network ID</th>
-                <th class="text-center" rowspan="1" colspan="1">Manufacturer</th>
+                <th class="text-center" rowspan="1" colspan="1">Network Provider</th>
               </tr>
             </thead>
             <tbody>
