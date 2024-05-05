@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2024-05-02T00:38:38.560800+00:00",
+  "timestamp": "2024-05-05T00:42:10.797784+00:00",
   "repo": "bdetwiler/draft-detecting-unwanted-location-trackers",
   "labels": [
     {
@@ -8941,24 +8941,26 @@
       "id": "PR_kwDOJdqgvc5tMyPz",
       "title": "Clarify that Get_Identifier is OPTIONAL",
       "url": "https://github.com/bdetwiler/draft-detecting-unwanted-location-trackers/pull/179",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "bdetwiler",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "The condition where support is not required is when an accessory supports identifier lookup over NFC.",
       "createdAt": "2024-04-19T17:23:20Z",
-      "updatedAt": "2024-05-01T17:44:30Z",
+      "updatedAt": "2024-05-03T20:27:44Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
-      "baseRefOid": "79563c3fe26fbaecef0173d9bf799be06ef1461a",
+      "baseRefOid": "a003413149e53c852ef7f173cd788a0366e42a9b",
       "headRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "headRefName": "bdetwiler/identifier-lookup-requirements",
-      "headRefOid": "bf36aa0987efaaffa5ab4843b02a21f4315c5697",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "headRefOid": "f88925306d3dea4e08087b74221c3855ba402f99",
+      "closedAt": "2024-05-03T20:27:44Z",
+      "mergedAt": "2024-05-03T20:27:44Z",
+      "mergedBy": "bdetwiler",
+      "mergeCommit": {
+        "oid": "79558a4cceb27a754cbe2cadd88bb29fd1f86c7a"
+      },
       "comments": [
         {
           "author": "davidlazarov",
@@ -8966,6 +8968,13 @@
           "body": "Discussed over the meeting - thanks for clarifying.",
           "createdAt": "2024-05-01T17:44:21Z",
           "updatedAt": "2024-05-01T17:44:21Z"
+        },
+        {
+          "author": "bdetwiler",
+          "authorAssociation": "OWNER",
+          "body": "Rebased and fixed merge conflicts\r\n",
+          "createdAt": "2024-05-03T20:27:24Z",
+          "updatedAt": "2024-05-03T20:27:24Z"
         }
       ],
       "reviews": [
@@ -9002,24 +9011,26 @@
       "id": "PR_kwDOJdqgvc5tM7Ge",
       "title": "Update language in the Network ID Registry",
       "url": "https://github.com/bdetwiler/draft-detecting-unwanted-location-trackers/pull/180",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "bdetwiler",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "'Manufacturer' is the wrong language to use. Instead, it shall use 'Finding Network'.",
       "createdAt": "2024-04-19T17:44:20Z",
-      "updatedAt": "2024-05-01T17:43:11Z",
+      "updatedAt": "2024-05-03T20:17:19Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
       "baseRefOid": "bb78ff96604c3e711ad8bd652678a4301688d561",
       "headRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "headRefName": "bdetwiler/finding-network-registry",
       "headRefOid": "d7f0f8bc9c68f821d6750ee1018b553c8a0358c0",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-05-03T20:17:19Z",
+      "mergedAt": "2024-05-03T20:17:19Z",
+      "mergedBy": "bledvina",
+      "mergeCommit": {
+        "oid": "a003413149e53c852ef7f173cd788a0366e42a9b"
+      },
       "comments": [
         {
           "author": "bdetwiler",
@@ -9118,24 +9129,26 @@
       "id": "PR_kwDOJdqgvc5tM-m5",
       "title": "Update battery level values to include reserved values",
       "url": "https://github.com/bdetwiler/draft-detecting-unwanted-location-trackers/pull/182",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "bdetwiler",
       "authorAssociation": "OWNER",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-04-19T17:55:49Z",
-      "updatedAt": "2024-05-01T17:29:37Z",
+      "updatedAt": "2024-05-02T01:03:50Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
       "baseRefOid": "bb78ff96604c3e711ad8bd652678a4301688d561",
       "headRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "headRefName": "bdetwiler/update-battery-level-values",
       "headRefOid": "f1496a6e2c528c8acd66b557f9c3eebe3e2ac016",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-05-02T01:03:50Z",
+      "mergedAt": "2024-05-02T01:03:50Z",
+      "mergedBy": "bledvina",
+      "mergeCommit": {
+        "oid": "2acf4764c016969faa23003065bded9e143e7e50"
+      },
       "comments": [],
       "reviews": [
         {
@@ -9297,50 +9310,133 @@
       "url": "https://github.com/bdetwiler/draft-detecting-unwanted-location-trackers/pull/185",
       "state": "OPEN",
       "author": "karthikpattabi",
-      "authorAssociation": "NONE",
+      "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "Update NFC Tap Identifier Retireval",
       "createdAt": "2024-04-25T23:16:21Z",
-      "updatedAt": "2024-04-29T21:22:43Z",
+      "updatedAt": "2024-05-03T21:43:18Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
       "baseRefOid": "79563c3fe26fbaecef0173d9bf799be06ef1461a",
       "headRepository": "karthikpattabi/draft-detecting-unwanted-location-trackers",
       "headRefName": "main",
-      "headRefOid": "1bbe2af04b07dc21da5311f3db11489be8f7f584",
+      "headRefOid": "5a3032f853765a19a778c9b61086845e5672c634",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOJdqgvc55Teqf",
+          "commit": {
+            "abbreviatedOid": "1bbe2af"
+          },
+          "author": "davidlazarov",
+          "authorAssociation": "COLLABORATOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-05-02T08:35:15Z",
+          "updatedAt": "2024-05-02T08:35:15Z",
+          "comments": [
+            {
+              "originalPosition": 19,
+              "body": "missing space after 'argument'",
+              "createdAt": "2024-05-02T08:35:15Z",
+              "updatedAt": "2024-05-02T08:35:15Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOJdqgvc55TfHJ",
+          "commit": {
+            "abbreviatedOid": "1bbe2af"
+          },
+          "author": "davidlazarov",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-05-02T08:36:15Z",
+          "updatedAt": "2024-05-02T08:36:15Z",
+          "comments": []
+        },
+        {
+          "id": "PRR_kwDOJdqgvc55Y1LQ",
+          "commit": {
+            "abbreviatedOid": "1bbe2af"
+          },
+          "author": "karthikpattabi",
+          "authorAssociation": "CONTRIBUTOR",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2024-05-02T18:19:37Z",
+          "updatedAt": "2024-05-02T18:19:37Z",
+          "comments": [
+            {
+              "originalPosition": 19,
+              "body": "Added space after argument. ",
+              "createdAt": "2024-05-02T18:19:37Z",
+              "updatedAt": "2024-05-02T18:19:37Z"
+            }
+          ]
+        },
+        {
+          "id": "PRR_kwDOJdqgvc55iSvu",
+          "commit": {
+            "abbreviatedOid": "5a3032f"
+          },
+          "author": "sivagmovva",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-05-03T21:43:18Z",
+          "updatedAt": "2024-05-03T21:43:18Z",
+          "comments": []
+        }
+      ]
     },
     {
       "number": 186,
       "id": "PR_kwDOJdqgvc5t3oJY",
       "title": "Accessory Onboarding to a Network",
       "url": "https://github.com/bdetwiler/draft-detecting-unwanted-location-trackers/pull/186",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "karthikpattabi",
-      "authorAssociation": "NONE",
+      "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "",
       "createdAt": "2024-04-26T18:07:13Z",
-      "updatedAt": "2024-04-29T21:25:30Z",
+      "updatedAt": "2024-05-03T20:16:20Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
       "baseRefOid": "79563c3fe26fbaecef0173d9bf799be06ef1461a",
       "headRepository": "karthikpattabi/draft-detecting-unwanted-location-trackers",
       "headRefName": "main_onboard",
       "headRefOid": "fb892ffc1414f5ac8a11c98b6616bfb1f575e114",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2024-05-03T20:16:20Z",
+      "mergedAt": "2024-05-03T20:16:20Z",
+      "mergedBy": "bledvina",
+      "mergeCommit": {
+        "oid": "61ebb66830553e726010a6fc14c8fccce1487e4e"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "PRR_kwDOJdqgvc55Tgv9",
+          "commit": {
+            "abbreviatedOid": "fb892ff"
+          },
+          "author": "davidlazarov",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2024-05-02T08:39:53Z",
+          "updatedAt": "2024-05-02T08:39:53Z",
+          "comments": []
+        }
+      ]
     },
     {
       "number": 187,
@@ -9354,13 +9450,13 @@
       "labels": [],
       "body": "",
       "createdAt": "2024-04-26T23:35:13Z",
-      "updatedAt": "2024-05-01T21:00:30Z",
+      "updatedAt": "2024-05-03T22:35:16Z",
       "baseRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "baseRefName": "main",
-      "baseRefOid": "79563c3fe26fbaecef0173d9bf799be06ef1461a",
+      "baseRefOid": "79558a4cceb27a754cbe2cadd88bb29fd1f86c7a",
       "headRepository": "bdetwiler/draft-detecting-unwanted-location-trackers",
       "headRefName": "tertan-reserved-updates",
-      "headRefOid": "acd96bfb768cb061482ba5d2b16387a035f398be",
+      "headRefOid": "139184f5af9c9213e8948ccd1e4fb9abc00ffd9e",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
