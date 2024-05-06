@@ -5,12 +5,12 @@
 Network Working Group                                         B. Ledvina
 Internet-Draft                                                     Apple
 Intended status: Informational                               Z. Eddinger
-Expires: 4 November 2024                                          Google
+Expires: 7 November 2024                                          Google
                                                              B. Detwiler
                                                                    Apple
                                                           S. P. Polatkan
                                                                   Google
-                                                              3 May 2024
+                                                              6 May 2024
 
 
                   Detecting Unwanted Location Trackers
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 4 November 2024.
+   This Internet-Draft will expire on 7 November 2024.
 
 Copyright Notice
 
@@ -1216,15 +1216,43 @@ Table of Contents
 3.14.5.  Identifier over NFC
 
    For those accessories that support identifier retrieval over NFC, an
-   associated accessory SHALL advertise the encrypted identifier encoded
-   as a hex string.  This string SHALL be an argument passed to the URL
-   defined in the Product data registry (product-data-registry) which
-   SHALL decrypt the identifier payload and return the identifier of the
-   accessory in a form that can be rendered in the platform's HTML view.
+   associated accessory SHALL advertise the whole URL with arguments as
+   the payload over NFC.  The payload SHALL look like the URL shown
+   below. "https://{URL}?pid=%04x&b=%02x&fv=%08x&e=%s"
 
-   The encrypted identifier when in associated state SHALL be an
-   argument passed to this URL and it is REQUIRED that any metadata
-   passed be non-identifiable.
+   +==========+==============+==================+=====================+
+   |   URL    | URL Argument |      Notes       |      Reference      |
+   | argument |     Type     |                  |                     |
+   +==========+==============+==================+=====================+
+   |    b     |  hex string  |  Battery Level   |    Battery Level    |
+   |          |              |    (Optional)    | (Section 3.11.1.10) |
+   +----------+--------------+------------------+---------------------+
+   |    bt    |  hex string  |  BT Mac address  |     MAC address     |
+   |          |              |    (Optional)    |    (Section 3.5)    |
+   +----------+--------------+------------------+---------------------+
+   |    fv    |  hex string  | Firmware version |   Firmware version  |
+   |          |              |    (Optional)    |  (Section 3.11.1.8) |
+   +----------+--------------+------------------+---------------------+
+   |    e     |  hex string  |    Encrypted     |  Identifier Payload |
+   |          |              |    Identifier    |  (Section 3.12.4.2) |
+   |          |              |    (Required)    |                     |
+   +----------+--------------+------------------+---------------------+
+   |   pid    |  hex string  |   Product Data   |     Product Data    |
+   |          |              |    (Required)    |  (Section 3.11.1.1) |
+   +----------+--------------+------------------+---------------------+
+
+                Table 21: Identifier Lookup URL-arguments
+
+   The URL SHALL be hosted by the network provider.  The URL SHALL
+   decrypt the identifier payload and return the identifier of the
+   accessory in a form that can be rendered in the platform's HTML view.
+   One approach to exchange the URL with the accessory, is when the
+   accessory owner associates the accessory to a network provider.  When
+   a user performs NFC Tap and the accessory is in associated state, the
+   encrypted identifier encoded in hex string SHALL be an argument ("e")
+   passed to the identifier retrieval URL.  When a user performs NFC Tap
+   and the accessory is not in associated state, the behavior is
+   undefined and is beyond the scope of this spec.
 
 3.15.  Owner registry
 
@@ -1270,7 +1298,7 @@ Table of Contents
 
    Accessory manufacturer’s MUST pick an accessory category value that
    closest resembles their physical product.  If none of the accessory
-   categories provided in Table 21 match the physical product, Other
+   categories provided in Table 22 match the physical product, Other
    MUST be chosen.
 
                +============================+=============+
@@ -1361,7 +1389,7 @@ Table of Contents
                | Reserved for future use    | 2-127, 168+ |
                +----------------------------+-------------+
 
-                   Table 21: Accessory Category Values
+                   Table 22: Accessory Category Values
 
 5.  Firmware Updates
 
@@ -1606,7 +1634,7 @@ Table of Contents
 10.1.1.  Temporary Registry
 
    Until this an IANA registry is available, the values in this registry
-   are listed in Table 22.
+   are listed in Table 23.
 
                      +============+==================+
                      | Network ID | Network Provider |
@@ -1620,7 +1648,7 @@ Table of Contents
                      |    0xFF    |     Reserved     |
                      +------------+------------------+
 
-                         Table 22: Finding Network
+                         Table 23: Finding Network
                                   Registry
 
 11.  Normative References
